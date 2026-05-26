@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Inter;
+    src: url(../font/Inter-VariableFont_opsz\,wght.ttf);
+}
+
+body {
+    font-family: Inter;
+}
+
+.header {
+    position: sticky;
+    min-width: 100%;
+    height: 15%;
+    background-color: #1A233A;
+    margin: 0px;
+    padding: 0px;
+}
