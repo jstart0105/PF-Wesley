@@ -4,16 +4,48 @@
     font-family: Inter;
     src: url(../font/Inter-VariableFont_opsz\,wght.ttf);
 }
+:root {
+    --dark-blue: #1A233A;
+    --orange: #FF4F00;
+}
 
 body {
     font-family: Inter;
 }
 
-.header {
-    position: sticky;
-    min-width: 100%;
-    height: 15%;
-    background-color: #1A233A;
-    margin: 0px;
-    padding: 0px;
+nav, .navbar-fixed {
+    height: 80px !important; 
+}
+
+nav ul a {
+    line-height: 80px !important; 
+}
+
+.nav-wrapper {
+    background-color: var(--dark-blue);
+}
+
+.logo_container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    float: left;
+}
+
+.logo_header {
+    margin-left: 15px;
+    height: 60%;
+}
+
+.btn {
+    background-color: var(--orange);
+}
+
+nav ul a:not(.btn) {
+    line-height: 80px !important; 
+}
+
+.nav-wrapper .btn {
+    margin-top: 22px; /* (80px da nav - 36px do botão) / 2 = 22px de margem no topo */
+    line-height: 36px; /* Retorna o alinhamento de texto padrão do botão do Materialize */
 }
